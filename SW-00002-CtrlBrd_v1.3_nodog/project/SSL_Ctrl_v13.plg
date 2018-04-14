@@ -1,0 +1,274 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+F:\SOCCER_ROBOT\SSL_CtrlBrd_v1.3\project\SSL_Ctrl_v13.uvproj
+Project File Date:  05/03/2016
+
+<h2>Output:</h2>
+Build target 'SSL_Ctrl_v13'
+compiling nrf24l01.c...
+compiling nrf24l01_drv.c...
+compiling packet.c...
+compiling param.c...
+..\src\param.c(155): warning:  #177-D: variable "sum" was declared but never referenced
+compiling pid.c...
+compiling robot.c...
+..\src\robot.c(448): warning:  #223-D: function "do_acc_handle_move" declared implicitly
+..\src\robot.c(455): warning:  #223-D: function "do_acc_handle_move" declared implicitly
+..\src\robot.c(484): warning:  #223-D: function "AT_Set_device_name_cmd" declared implicitly
+..\src\robot.c(511): warning:  #223-D: function "AT_Set_device_name_code" declared implicitly
+compiling timer.c...
+compiling action.c...
+compiling comm.c...
+compiling factory.c...
+compiling Hm_bluetooth.c...
+..\src\Hm_bluetooth.c(242): warning:  #177-D: variable "cpuid_24" was declared but never referenced
+..\src\Hm_bluetooth.c(345): warning:  #177-D: variable "cpuid_24" was declared but never referenced
+compiling i2c.c...
+compiling init.c...
+compiling main.c...
+compiling misc.c...
+compiling motor.c...
+compiling MPU6050_driver.c...
+..\src\MPU6050_driver.c(227): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\src\MPU6050_driver.c(234): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\src\MPU6050_driver.c(240): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\src\MPU6050_driver.c(242): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\src\MPU6050_driver.c(244): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\src\MPU6050_driver.c(246): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\src\MPU6050_driver.c(250): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+compiling usb_bsp.c...
+linking...
+Program Size: Code=70692 RO-data=2556 RW-data=892 ZI-data=20148  
+FromELF: creating hex file...
+"SSL_Ctrl_v13.axf" - 0 Error(s), 14 Warning(s).
+Load "F:\\SOCCER_ROBOT\\SSL_CtrlBrd_v1.3\\project\\SSL_Ctrl_v13.AXF" 
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+Set JLink Project File to "F:\SOCCER_ROBOT\SSL_CtrlBrd_v1.3\project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.40c, compiled Jan 24 2012 09:30:33
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'SSL_Ctrl_v13'
+compiling robot.c...
+..\src\robot.c(448): warning:  #223-D: function "do_acc_handle_move" declared implicitly
+..\src\robot.c(455): warning:  #223-D: function "do_acc_handle_move" declared implicitly
+..\src\robot.c(484): warning:  #223-D: function "AT_Set_device_name_cmd" declared implicitly
+..\src\robot.c(511): warning:  #223-D: function "AT_Set_device_name_code" declared implicitly
+linking...
+Program Size: Code=70692 RO-data=2556 RW-data=892 ZI-data=20148  
+FromELF: creating hex file...
+"SSL_Ctrl_v13.axf" - 0 Error(s), 4 Warning(s).
+Load "F:\\SOCCER_ROBOT\\SSL_CtrlBrd_v1.3\\project\\SSL_Ctrl_v13.AXF" 
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+Set JLink Project File to "F:\SOCCER_ROBOT\SSL_CtrlBrd_v1.3\project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.40c, compiled Jan 24 2012 09:30:33
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'SSL_Ctrl_v13'
+compiling robot.c...
+..\src\robot.c(449): warning:  #223-D: function "do_acc_handle_move" declared implicitly
+..\src\robot.c(456): warning:  #223-D: function "do_acc_handle_move" declared implicitly
+..\src\robot.c(485): warning:  #223-D: function "AT_Set_device_name_cmd" declared implicitly
+..\src\robot.c(512): warning:  #223-D: function "AT_Set_device_name_code" declared implicitly
+compiling action.c...
+compiling comm.c...
+compiling main.c...
+linking...
+Program Size: Code=70716 RO-data=2556 RW-data=892 ZI-data=20148  
+FromELF: creating hex file...
+"SSL_Ctrl_v13.axf" - 0 Error(s), 4 Warning(s).
+Load "F:\\SOCCER_ROBOT\\SSL_CtrlBrd_v1.3\\project\\SSL_Ctrl_v13.AXF" 
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+Set JLink Project File to "F:\SOCCER_ROBOT\SSL_CtrlBrd_v1.3\project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.40c, compiled Jan 24 2012 09:30:33
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.325V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Load "F:\\SOCCER_ROBOT\\SSL_CtrlBrd_v1.3\\project\\SSL_Ctrl_v13.AXF" 
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+Set JLink Project File to "F:\SOCCER_ROBOT\SSL_CtrlBrd_v1.3\project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.40c, compiled Jan 24 2012 09:30:33
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'SSL_Ctrl_v13'
+compiling robot.c...
+..\src\robot.c(449): warning:  #223-D: function "do_acc_handle_move" declared implicitly
+..\src\robot.c(456): warning:  #223-D: function "do_acc_handle_move" declared implicitly
+..\src\robot.c(485): warning:  #223-D: function "AT_Set_device_name_cmd" declared implicitly
+..\src\robot.c(512): warning:  #223-D: function "AT_Set_device_name_code" declared implicitly
+linking...
+Program Size: Code=70716 RO-data=2556 RW-data=892 ZI-data=20148  
+FromELF: creating hex file...
+"SSL_Ctrl_v13.axf" - 0 Error(s), 4 Warning(s).
+Build target 'SSL_Ctrl_v13'
+linking...
+Program Size: Code=70716 RO-data=2556 RW-data=892 ZI-data=20148  
+FromELF: creating hex file...
+"SSL_Ctrl_v13.axf" - 0 Error(s), 0 Warning(s).
+Load "F:\\SOCCER_ROBOT\\SSL_CtrlBrd_v1.3\\project\\SSL_Ctrl_v13.AXF" 
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+Set JLink Project File to "F:\SOCCER_ROBOT\SSL_CtrlBrd_v1.3\project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.40c, compiled Jan 24 2012 09:30:33
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.325V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
