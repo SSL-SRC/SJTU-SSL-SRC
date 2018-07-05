@@ -1,0 +1,96 @@
+CornerKickV1 打skuba,一辆车冲侧面 （OK）
+CornerKickV2 待定(看不懂)
+CornerKickV3 两腿张开，跑位点要改，几个车跑位点贴太近，容易把一堆都搞得有车（不对，要改）
+CornerKickV4 跑位线路要优化（可以）
+CornerKickV5 三个车一起冲。太过集中。V5据说打自己的防守比较好。（可以）
+CornerKickV6 前场交叉换位，后卫冲上。备用。比较稳定。（传球力度不太稳定）
+CornerKickV7 把防守队员闪开。一个车后撤，另一个车晃动（不使用）
+
+	出现一次所有车后撤的bug。
+
+CornerKickV8 右侧两车瞎晃，中间车冲上去打门**********（OK 挑平都可以，人为指定）
+CornerKickV9 和两腿叉开的脚本比较像。但是不用插入的车用挡拆的车
+
+	确认射门补偿文件
+	确认所有脚本中，门将上前的标志位 
+	开球车一直是蓝车四号，比较稳
+	确认脚本是否少一个车可用
+
+CornerKickV10	三车挡拆 ****************（目前不可以Touch平传）
+CornerKickV11	转身同边，向后平传。向外侧转能够避免被别人防。用4号车测得，力度稍微偏大，机器人可能接不到。(目前OK)
+CornerKickV12	模拟KIKS的四车冲禁区。规则改变后没有多大用，可以用来骗乌龙。（不建议用。）
+CornerKickV13	同边向后挑。冲挑。有问题。不建议用。（和10、11有点像）
+CornerKickV14	打档板
+CornerKickV15	一起来所有车都不动
+CornerKickV16	三车拉同边。同边一台车和侧面一车交叉换位（打KIKS使用）
+CornerKickV17	三车拉同边，一辆车从另一边晃几下打门（和16一样，不过拉得更靠边）
+CornerKickV18	门将出来射门（不用）
+
+CornerKickV19	阵型试探，一脚打门，没什么用了（不用）
+CornerKickV20	车会冲禁区，有bug（不用）
+CornerKickV21	试探，换位射门，没什么用（不用）
+
+CornerKickV22	交叉换位，挑中间射门
+CornerKickV23   模拟Immortal,用来打KIKS
+CornerKickV30	KIKS
+
+CornerKickV31	打ER-Force
+CornerKickV40 	Skuba打强版
+	恢复一下两车拉边冲的定位球
+	球的y值靠中间的定位球，要修改。
+
+
+FrontKickV1	平传(不用)
+FrontKickV2	平传(不用)
+
+	goAndTurnKick有点问题
+
+FrontKickV3	  打日本两个队非常好进球(跑位不对)	
+FrontKickV4	  架炮
+FrontKickV5	  挑对角，非常稳定(OK)
+FrontKickV6	  挡拆后挑对角。点的位置需要修改。(挑的太近，调位置)
+FrontKickV7	  倒钩(不用)
+FrontKickV8	  直接往前挑(不用)
+FrontKickV9	  吸球转身踢。待调整，不稳定。拖时间用。(吸不住)
+FrontKickV10  三车扎堆传侧边(需调传球速度)
+FrontKickV11  直接挑门(不用)
+FrontKickV12  往前挑，后面车上前接球射门(不用)
+FrontKickV40  靠中间位置的两传一射
+
+MiddleKickV1	后面插上打门。把开球车带走，打门。	打自己没问题，自己的车慢一点				
+MiddleKickV2	挑球对角(力度过小，需要修改)
+MiddleKickV3	平传，容易doubleTouch(不用)
+MiddleKickV4	架炮
+MiddleKickV5	immortalKick
+MiddleKickV6	往前调，截球
+MiddleKickV7    两传一射(改冲挑)
+
+immortalKickV1
+backKickV1	挑对角(传球力度过小,不用)
+backKickV2	直接打门
+backKickV3	immortalKick的一种(没原来的好)
+backKickV4  跟1差不多(不用)
+backKickV5  直接射门(不用)
+
+	backKick里要加个两传一射
+
+KickOffV1	往前小挑一脚，挑的力度过小
+KickOffV2	扭屁股开球
+	
+17, 23
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
