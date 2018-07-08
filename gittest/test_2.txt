@@ -1,4 +1,10 @@
 ljlkjkj;
 kljlkjlkj
+<<<<<<< HEAD
 chen xiaoxing came here today.
 chen xiaoxing came again.
+=======
+Zhongyuliang come here today
+5624-auhg-5165-dhad-564a-ada5
+songzhao come here
+>>>>>>> 80201715a2e5094f84533ec68083a9aad3ef097d
