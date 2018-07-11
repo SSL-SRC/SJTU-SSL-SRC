@@ -6,28 +6,10 @@ Z.Y.L.
 ---
 ##**0.学习目标**
 
- 1. 简单了解lua语言
- 2. rbk、zeus中的lua战术脚本结构与分类
- 2. 常用语句与函数
- 3. Lua与C++的接口和通信
-##**1.简单了解Lua语言**
-Lua 是一个小巧的脚本语言，其设计目的是为了嵌入应用程序中，从而为应用程序提供灵活的扩展和定制功能。Lua由标准C编写而成，几乎在所有操作系统和平台上都可以编译，运行。Lua并没有提供强大的库，这是由它的定位决定的。所以Lua不适合作为开发独立应用程序的语言。Lua有一个同时进行的JIT项目，提供在特定平台上的即时编译功能。Lua脚本可以很容易的被C/C++代码调用，也可以反过来调用C/C++的函数，这使得Lua在应用程序中可以被广泛应用。不仅仅作为扩展脚本，也可以作为普通的配置文件，代替XML,ini等文件格式，并且更容易理解和维护。Lua由标准C编写而成，代码简洁优美，几乎在所有操作系统和平台上都可以编译，运行。 一个完整的Lua解释器不过200k，在目前所有脚本引擎中，Lua的速度是最快的。这一切都决定了Lua是作为嵌入式脚本的最佳选择。
+**本文列举了lua战术脚本的功能**
 
-参考教程：[Lua教程][1]
-##**2. rbk、zeus中的lua战术脚本结构与分类**
 
-比赛中最常改动的lua脚本位于目录：rbk\robokit_ssl2017\bin\lua_scripts\ssl之下
-|FolderName|Description|
-|:---:|:---:|
-|opponent|针对世界强队和特殊情况的战术脚本|
-|play|定位球（Ref）和普通（Nor）情况下的进攻（Kick）和防守（Def）的战术脚本|
-|skill|具体动作的战术脚本|
-|utils|工具类脚本|
-|worldmodel|物理世界的反馈判断（Judge）|
-|ZeusLua|未知|
-|Config.lua|整场比赛的配置文件|
-|...|...|
-###2.1 opponent：
+##**opponent：**
 CMDragon、immortal、KIKS、MRL、RoboDragon、Skuba、backup、other、delay
 ```
 ----------------------------This is a demo:-------------------------------
@@ -46,9 +28,9 @@ CornerDef = "Ref_CornerDefV4",
 ...
 }
 ```
-###1.2 play：
+##**play：**
 play脚本分为3类：Nor，Ref，Test，分别对应gNormalPlay =，gRefPlayTable =，gTestPlayTable =
-|paramName|Description|
+|argumentName|Description|
 |:---:|:---:|
 |p、pos|点位|
 |d、dir|朝向|
@@ -206,70 +188,81 @@ if (bufcnt(not player.isMarked("Special"), 45, 120)) then...
 
 Special  = {SmartGoto{pos = TOW_POS1}},
 
+local pass_pos = pos.passForTouch(pKick)
+
 ```
 
 
 ----------
 **TestPlay（骚操作聚集地）**
+**Testplay分为四种：性能测试脚本；记录型脚本；调试战术脚本；骚操作**
+|scriptName|description|
+|:--:|:--:|
+|**性能测试脚本**||
+|TestRun|测试跑点性能|
+|TestTwoCtrMethod |两车来回跑点|
+|TestReceivePass|测试传接球性能：四个车相互接球踢球|
+|TestTwoTouch|测试传接球性能：三辆车互相传接球|
+|TestPassRecv|测试传接球性能：两车互传|
+|TestKickWithoutBall|测试踢嘴性能(Caution！)|
+|TestCompensate|测试接球性能|
+|TestPathPlanning|测试避障效果|
+|TestChipPass|测试挑球传接|
+|TestChipPassShoot|测试挑球传接射门|
+|TestGoalie|测试单射守门员的扑球能力(DANGER!!!)|
+|TestDefence|测试左右后卫、单后卫的扑球能力(DANGER!!!)|
+|TestNormal|测试Nor基本操作|
+|TestAvoidShootLine |测试能否避开传球线|
+|TestSkillPlay|用来测试skill的脚本|
+|TestChase |不知道|
+|TestChaseNew |不知道|
+|**记录型脚本**||
+|TestOnePassShoot|根据场地，调试一传一射脚本|
+|RecordChipData|记录挑球的力度和距离关系chipBallPos.txt（提前清空）|
+|VisionRecord|不知道|
+|RecordCircleBall|不知道|
+|CompensateRecord |传球射门记录|
+|**调试战术脚本**||
+|TestGoAndTurnKick|转身射门|
+|TestImmortalKick|Immortalkick|
+|TestHelpDefenceV1| 模拟RoboDragon的定位球战术（未成功！）|
+|TestHelpDefenceV2| 模拟RoboDragon的定位球战术（可使用！）|
+|TestShortPassAndShoot |两车短传射门（可使用）|
+|TestAssPass|据说是用车的边接球|
+|TestPassAndRush| 不知道|
+|TestWaitTouch |不知道|
+|TestOnePassShootV1|一传一射|
+|TestRoundPass |学习型转身传球|
+|TestCirleAndKick|绕球转一圈然后射门|
+|TestDribbleTurnKick|甩头踢球（未成功）|
+|TestTurnPassAndShoot|未知传射|
+|TestForAngle| 测试GoAndTurnKick 转动多少角度时能避开防开球车|
+|**骚操作**||
+|RunHeartShape|跑心形线|
+|Cha_Goto|按照球的位置选择绕圈还是排队|
+|IranOpenChallenge |伊朗公开赛挑战赛我方|
+|IranOpenChallenge_yellow |伊朗公开赛挑战赛我方|
+|OpenSpeedTest| 不知道|
 
-TestRun 最简单的跑两个点
-TestNormal 不知道
-TestInterKick 不知道
-TestReceivePass 两个车相互接球踢球
-TestKickWithoutBall 没有球也踢
-TestChase 不知道
-TestChaseNew 不知道
-TestTwoTouch 不知道
-Cha_Goto 不知道
-TestSkillPlay 用来测试skill的脚本
-TestPathPlanning 用来测试避障的脚本
-TestOnePassShoot 用来测试一传一射还能测球速的脚本
-TestCompensate 不知道
-RunHeartShape 跑心形线
-RecordChipData 记录挑球的力度和距离关系
-TestGoAndTurnKick 转身射门
-TestPassRecv 两车互传
-VisionRecord 不知道
-RecordCircleBall 不知道
-TestImmortalKick Immortalkick
-TestAssPass 据说是用车的边接球
-TestRoundPass 不知道
-TestAvoidShootLine 不知道
-TestWaitTouch 不知道
-TestChipPass 不知道
-TestCirleAndKick 不知道
-TestTwoCtrMethod 不知道
-TestPassAndRush 不知道
-TestChipPassShoot 不知道
-CompensateRecord 不知道
-TestShortPassAndShoot 不知道
-TestHelpDefenceV1 不知道
-TestHelpDefenceV2 不知道
-IranOpenChallenge 伊朗公开赛挑战赛
-IranOpenChallenge_yellow 伊朗公开赛挑战赛
-TestForAngle 不知道
-TestDribbleTurnKick 不知道
-TestTurnPassAndShoot 不知道
-OpenSpeedTest 不知道
-TestOnePassShootV1 不知道
-TestDefence 不知道
-
-
-**Task.lua常为机器人的一些动作函数**
+##**Task.lua**
+###常为机器人的一些动作函数
 |TaskName|Description|
 |:---:|:---:|
 |goCmuRush(pos, dir, acc, flag)|走到pos点位|
 |goPassPos("Role")|走到Role要传球的位置|
-|staticGetBall("Role")|Role接球静止|
+|staticGetBall("Role")|接球并静止，（转向role）|
 |slowGetBall(pos or nil)|Role缓慢接球|
 |pass("Role")|传球给Role|
 |receivePass("Role")|从Role接球并传球给Role|
 |stop()|停下死掉|
 |shoot()|射门|
+|goAndTurnKick(pos,strength)|以strength的力度向pos射门|
+|touch()|射门|
 |goAndTurnKickQuick(role,power,ktype={flat,chip})|接球转身快速射门|
 |advance()|无脑进攻|
 
-**Player.lua & ball.lua 常为场上的一些判断函数**
+##**Player.lua & ball.lua**
+###常为场上的一些判断函数
 |PlayerJudgeName|Description|
 |:---:|:---:|
 |toTargetDist("Role")|Role到点位的距离|
