@@ -1,4 +1,4 @@
-﻿# Lesson2 初识代码——zeus2014+、rbk
+﻿# Lesson2  ABC to zeus2014+、rbk
 
 标签（空格分隔）： RoboCup SRC 代码视频教学 rbk zeus2014+
 Z.Y.L.
