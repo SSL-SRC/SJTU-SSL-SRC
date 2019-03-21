@@ -77,4 +77,4 @@ This is the repository for all the related information and materials that are us
 </p>
 
 <h1>Vendors</h1>
-<a href="./vendors.md">Vendor List</a>
+<a href="./vendors/vendors.md">Vendor List</a>
