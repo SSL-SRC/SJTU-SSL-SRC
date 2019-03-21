@@ -69,7 +69,12 @@ This is the repository for all the related information and materials that are us
         Sep 2017
     </a>
     </li>
+    <li>
+    <a 
+    href="https://mp.weixin.qq.com/s?__biz=MzIzNzAxNTE5OA==&mid=2650213767&idx=1&sn=af9121d743f02e34927e77b92d460143&chksm=f0ccb476c7bb3d60e7f2b2125cc567ecc58e3ca46d642d9869694c62512fd72f57024e1a8ae1&mpshare=1&scene=2&srcid=0223zSj3moXx4n70It9iLyyN&from=timeline&ascene=2&devicetype=android-26&version=2700033b&nettype=3gnet&abtest_cookie=AwABAAoACwATAAQAI5ceAFaZHgDcmR4A3ZkeAAAA&lang=de&pass_ticket=aJiArHYDJjZB2M6PxJw9jLDJCh1IE0mx5%2F%2FYWOXVOzVczwQNgc5PmRhCVqfTmRkb&wx_header=1">Feb 2019</a>
+    </li>
 </ul>
 </p>
 
 <h1>Vendors</h1>
+<a href="./vendors.md">Vendor List</a>
