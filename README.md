@@ -24,6 +24,7 @@ This is the repository for all the related information and materials that are us
         <a href="http://i.youku.com/i/UMzM5ODA1NzQ3Ng==?spm=a2h0j.8191423.subscription_wrap.DD~A">
         Video Tutorials from Zhejiang University
         </a>
+        (password : zjunlict)
         [by TianyaoGao]
     </li>
     <li>
